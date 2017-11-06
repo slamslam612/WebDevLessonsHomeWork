@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Блог о моем городе</title>
+		<title>Контакты</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./bt.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -57,7 +57,7 @@
 		</header>
 		<main>
 			
-			<section class="home" id="home">
+			<section class="home inner-page" id="home">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -65,10 +65,7 @@
 								<img src="./img/logo.png" alt="Our logo">
 							</div>
 							<div class="home-heading">
-								<h1>Блог о моем городе</h1>
-							</div>
-							<div class="button-container">
-								<a class="btn btn-accent" href="#">В блог</a>
+								<h1>Контакты</h1>
 							</div>
 						</div>
 					</div>
@@ -135,50 +132,36 @@
 										</div>
 									</div>
 								</div>
-
 							</section>
 						</aside>
 					</div>
 					<div class="col-md-8 col-md-pull-4">
 						<section class="content-section">
-							<h2>Последние посты</h2>
-							<article class="article-list">
-								<header class="article-header">
-									<h3>Название поста</h3>
-									<div class="tags">
-										<a href="" class="tags-item">Море</a>
-										<a href="" class="tags-item">Солнце</a>
-										<a href="" class="tags-item">Песок</a>
-										<a href="" class="tags-item">Яхта</a>
-									</div>
-								</header>
-								<div class="article-body">
-									<img src="./img/resource/1.jpg" alt="Название поста">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-									</p>
+							<h2>Форма обратной связи</h2>
+							<div class="row">
+								<div class="col-md-9">
+									<form action="javascript: void(null);" class="callback-form" method="post">
+										<div class="item-group">
+											<i class="fa fa-user-o" aria-hidden="true"></i>
+											<input type="text" class="input-user" name="name" placeholder="Ваше имя" required="required">
+										</div>
+										<div class="item-group">
+											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+											<input type="email" class="input-email" name="email" placeholder="Ваш email" required="required">
+										</div>
+										<div class="item-group">
+											<i class="fa fa-comment-o" aria-hidden="true"></i>
+											<textarea class="textarea-message" name="message" cols="30" rows="4" placeholder="Ваше сообщение"></textarea>
+										</div>
+										<div class="item-group">
+											<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+											<button class="button-submit">Отправить</button>
+										</div>
+									</form>
 								</div>
-								<footer class="article-footer">
-									<div class="row">
-										<div class="col-md-6">
-											<a href="#" class="link link-to-post">Читать далее...</a>
-										</div>
-										<div class="col-md-6">
-											<a href="#" class="link-to-date link-service">Ноябрь 21 2017г.</a>
-										</div>
-									</div>
-								</footer>
-							</article>
+							</div>
 						</section>
-						<div class="pagination">
-							<ul>
-								<li><a href="#" class="prev-page"></a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#" class="last-page"></a></li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -188,6 +171,7 @@
 		<footer class="home-footer">
 			<p>© 2017 | Our blog</p>
 		</footer>
+
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="./libs/owlCarousel/owl.carousel.min.js"></script>
